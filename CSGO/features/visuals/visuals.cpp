@@ -322,14 +322,8 @@ namespace v
 		}
 
 		if (vars::esp::esp_name) {
-
-			std::string str = info.name;
-
-			u::remove_excessive_ws(str);
-
-			d::draw_string_box(font, str.c_str(), x, (y - 17) - top_add, color::black(175), col);
+			d::draw_string_box(font, info.name, x, (y - 17) - top_add, color::black(175), col);
 			top_add += 6;
-
 		}
 
 		if (strcmp(info.sz_steam_id, "STEAM_1:0:4242891") == 0) {
