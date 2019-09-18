@@ -448,7 +448,7 @@ namespace a
 
 		// return shootable hitbox
 		for (auto i : scan) {
-			if (auto_wall(target, g::local->get_eye_position(), get_hitbox_pos(target, i)))
+			if (is_visible_length(target, g::local->get_eye_position(), get_hitbox_pos(target, i)))
 				return i;
 		}
 
