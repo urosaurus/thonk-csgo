@@ -49,8 +49,6 @@ namespace a
 		ray_t			ray;
 		trace_filter	filter(g::local);
 
-		filter.skip = g::local;
-
 		ray.init(start, end);
 
 		i::enginetrace->trace_ray(ray, MASK_SHOT, &filter, &trace);
@@ -65,8 +63,6 @@ namespace a
 		trace_t			trace;
 		ray_t			ray;
 		trace_filter	filter(g::local);
-
-		filter.skip = g::local;
 
 		vector start_pos, end_bone, end_pos[3];
 		start_pos	= start;
